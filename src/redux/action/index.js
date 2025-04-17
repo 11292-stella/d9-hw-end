@@ -16,9 +16,9 @@ export const removeFromFavoriteAction = (fav) => {
   }
 }
 
-export const setSearchResultsAction = (results) => {
+export const setSearchResultsAction = (jobs) => {
   return {
     type: SET_SEARCH_RESULTS,
-    payload: results,
+    payload: jobs,
   }
 }

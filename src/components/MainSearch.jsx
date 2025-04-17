@@ -7,10 +7,10 @@ import { setSearchResultsAction } from "../redux/action"
 
 const MainSearch = () => {
   const [query, setQuery] = useState("")
-  const [jobs, setJobs] = useState([])
-  const dispatch = useDispatch()
-  const results = useSelector((state) => state.search.results)
 
+  const dispatch = useDispatch()
+
+  const jobs = useSelector((state) => state.search.results)
   const navigate = useNavigate()
 
   const baseEndpoint = "https://strive-benchmark.herokuapp.com/api/jobs?search="

@@ -5,6 +5,10 @@ import { useSelector, useDispatch } from "react-redux"
 import { addToFavoriteAction } from "../redux/action"
 
 const Job = ({ data }) => {
+  if (!data || !data.company_name || !data.title || !data.url) {
+    return null
+  }
+
   const favourites = useSelector((state) => state.favourite.list)
   const dispatch = useDispatch()
 
@@ -46,5 +50,4 @@ const Job = ({ data }) => {
     </Row>
   )
 }
-
 export default Job

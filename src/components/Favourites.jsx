@@ -12,7 +12,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { removeFromFavoriteAction } from "../redux/action"
 
 const Favourites = () => {
-  const favourites = useSelector((state) => state.favourite.list)
+  const favourites = useSelector((state) => state.favorite.list)
   const dispatch = useDispatch()
 
   const navigate = useNavigate()
