@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { Star, StarFill } from "react-bootstrap-icons"
 import { useSelector, useDispatch } from "react-redux"
-import { addToFavorite, addToFavoriteAction } from "../redux/action"
+import { addToFavoriteAction } from "../redux/action"
 
 const Job = ({ data }) => {
   const favourites = useSelector((state) => state.favourite.list)

@@ -19,7 +19,7 @@ const CompanySearchResults = () => {
   useEffect(() => {
     getJobs()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [dispatch, params.companyName])
 
   const getJobs = async () => {
     try {
